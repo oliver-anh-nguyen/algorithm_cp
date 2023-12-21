@@ -33,6 +33,14 @@ int main() {
                     dir = dir.substr(1);
                 }
                 stringstream inp(dir);
+                string tmp;
+                while(getline(inp, tmp, '/')) {
+                    if (tmp == ".." && paths.size() > 0) {
+                        paths.pop_back();
+                    } else {
+                        paths.push_back(tmp);
+                    }
+                }
             }
         }
     }
