@@ -9,9 +9,8 @@
 *.xcuserstate
 project.xcworkspace/
 xcuserdata/
-*xcworkspace/xcuserdata/*
-*
-
+**/xcuserdata/*
+*.xcuserdata
 # Generated files
 *.o
 *.pyc

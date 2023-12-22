@@ -10,9 +10,10 @@
 
 using namespace std;
 
-const int maxn = 10;
-int sumXor[2][maxn];
+const int N = (1 << 21);
+int sumXor[2][N];
 int n;
+
 int main(){
     cin >> n;
     sumXor[0][0] = 1;
@@ -25,4 +26,5 @@ int main(){
         sumXor[i % 2][tmp]++;
     }
     cout << res;
+    return 0;
 }
