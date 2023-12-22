@@ -9,6 +9,8 @@
 *.xcuserstate
 project.xcworkspace/
 xcuserdata/
+*xcworkspace/xcuserdata/*
+*
 
 # Generated files
 *.o
