@@ -10,8 +10,7 @@
 
 using namespace std;
 
-int S[10];
-int pos[10];
+int S[400005];
 
 bool valid(int n, string s, int k, int m) {
     for (int i = 1; i <= n ; i++) {
@@ -31,13 +30,9 @@ int main() {
     cin >> n >> k;
     string s;
     cin >> s;
-    int empty = 0;
+    s = " " + s;
     for (int i = 1; i <= n; i++) {
         S[i] = S[i-1] + (s[i] == '0');
-        if (s[i] == '0') {
-            pos[S[i]] = i;
-            empty++;
-        }
     }
     
     int l = 0, r = n + 1;
