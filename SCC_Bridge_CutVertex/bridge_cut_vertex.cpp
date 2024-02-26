@@ -39,19 +39,7 @@ void dfs(int u, int p) {
 }
 
 int main() {
-    cin >> n >> m;12 12
-    1 2
-    1 3
-    2 4
-    2 5
-    2 7
-    3 8
-    3 9
-    4 5
-    4 7
-    5 10
-    6 11
-    8 9
+    cin >> n >> m;
     for (int u, v, i = 0; i < m; i++) {
         cin >> u >> v;
         graph[u].push_back(v);
